@@ -1,0 +1,51 @@
+<!--To improve the formatting of your HTML source code, you can use the Format Document command Shift+Alt+F to format the entire file or Format Selection Ctrl+K Ctrl+F to just format the selected text.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currecy Converter</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <form>
+        <div class="amount">
+          <label for="amount">Enter Amount: </label>
+          <input type="text" id=amount value="1"/>
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <label for="from">From</label>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/shiny/64.png" />
+              <select id="from">
+              </select>
+            </div>
+          </div>
+
+          <div class="reverse-exchange">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </div>
+
+          <div class="to">
+            <label for="to">To</label>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/shiny/64.png" />
+              <select id="to">                
+              </select>
+            </div>
+          </div>
+        </div>
+        <button>Get Exchange Rate</button>
+        <div class="msg">
+          <p>1 USD = 83 INR</p>
+        </div>
+      </form>
+    </div>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
